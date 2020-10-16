@@ -12,19 +12,21 @@ import (
 )
 
 func (service *ULoginService) LoginAccountAck(proxy *UClientProxy , request *URequest, roleList string , result string , success bool ) {
-	message := &pb.LOGIN_ACCOUNT_ACK{Result: result,Success: success}
-	for _,id := range strings.Split(roleList , ","){
-		rid,_ := strconv.Atoi(id)
-		message.RoleIdList = append(message.RoleIdList, int32(rid))
+	message := &pb.LoginAccountAckCmd{Result: result,Success: success}
+	if roleList != ""{
+		for _,id := range strings.Split(roleList , ","){
+			rid,_ := strconv.Atoi(id)
+			message.RoleIdList = append(message.RoleIdList, int32(rid))
+		}
 	}
-	request.Cmd = zconf.TCmd(pb.CMD_MT_LOGIN_ACCOUNT_ACK)
+	request.Cmd = zconf.TCmd(pb.CMD_xLoginAccountAckCmd)
 	request.MessageType =  zconf.MT_TO_CLIENT
 	request.ProtoMessage = message
 	proto.ResponseMessage(proxy , request)
 	request.Release()
 }
 func (service *ULoginService) LoginAccount(proxy *UClientProxy, request *URequest) {
-	message, ok := request.ProtoMessage.(*pb.LOGIN_ACCOUNT)
+	message, ok := request.ProtoMessage.(*pb.LoginAccountCmd)
 	if !ok {
 		zlog.Error("AddEngineComponent recv error request : ", proxy, request)
 		return
@@ -49,5 +51,5 @@ func (service *ULoginService) CreateRole(proxy *UClientProxy, request *URequest)
 
 }
 func (service *ULoginService) InitGameDownHandles(){
-	reqHandleMaps[TCmd(pb.CMD_MT_LOGIN_ACCOUNT)] = service.AddEngineComponent
+	reqHandleMaps[TCmd(pb.CMD_xLoginAccountCmd)] = service.LoginAccount
 }

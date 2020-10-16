@@ -35,3 +35,223 @@
 2020-07-31T12:19:05.583+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59264
 2020-07-31T12:19:05.583+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59265
 2020-07-31T12:19:05.583+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59266
+2020-07-31T17:29:27.269+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-07-31T17:29:27.274+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51683
+2020-07-31T17:29:27.274+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51684
+2020-07-31T17:29:27.274+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51682
+2020-08-01T21:28:12.501+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-01T21:28:12.512+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52036
+2020-08-01T21:28:12.513+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52037
+2020-08-01T21:28:12.513+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52035
+2020-08-01T21:28:12.513+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52038
+2020-08-02T06:43:35.968+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:52038: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T06:43:35.968+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00008c060 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc0000052a0}) map[]}
+2020-08-02T06:43:35.968+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T06:43:35.968+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:52038: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:13:42.026+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:13:42.027+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56352
+2020-08-02T07:13:42.027+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56353
+2020-08-02T07:13:42.027+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56354
+2020-08-02T07:15:25.074+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56501
+2020-08-02T07:16:55.461+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:56501: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:16:55.461+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000308008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc00010d280}) map[]}
+2020-08-02T07:16:55.461+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:16:55.461+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:56501: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:17:00.276+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56646
+2020-08-02T07:17:36.027+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:56646: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:17:36.027+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000006028 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc00010d280}) map[]}
+2020-08-02T07:17:36.027+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:17:36.027+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:56646: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:17:44.042+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56722
+2020-08-02T07:18:12.520+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:18:12.521+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56771
+2020-08-02T07:18:18.817+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56772
+2020-08-02T07:18:19.398+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56770
+2020-08-02T07:18:19.871+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56773
+2020-08-02T07:19:59.951+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:56773: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:19:59.951+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000304008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc000005320}) map[]}
+2020-08-02T07:19:59.951+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:19:59.952+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:56773: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:20:04.094+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56955
+2020-08-02T07:20:36.850+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:56955: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:20:36.851+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000090008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc000005320}) map[]}
+2020-08-02T07:20:36.851+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:20:36.851+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:56955: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:20:42.705+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57018
+2020-08-02T07:31:19.309+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:31:19.310+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57976
+2020-08-02T07:31:19.310+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57978
+2020-08-02T07:31:19.310+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57977
+2020-08-02T07:31:19.310+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57979
+2020-08-02T07:31:25.803+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:57979: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:31:25.803+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000094008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc0000052a0}) map[]}
+2020-08-02T07:31:25.803+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:31:25.803+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:57979: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:31:28.626+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58000
+2020-08-02T07:33:24.822+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:33:24.822+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58191
+2020-08-02T07:33:58.462+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:33:58.463+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58260
+2020-08-02T07:34:00.453+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58261
+2020-08-02T07:34:00.453+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58259
+2020-08-02T07:34:16.415+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58294
+2020-08-02T07:34:20.362+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:58294: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:34:20.362+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000292008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc000091240}) map[]}
+2020-08-02T07:34:20.362+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:34:20.362+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:58294: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:34:30.259+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58318
+2020-08-02T07:34:48.901+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:58318: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:34:48.901+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00038c008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc000091240}) map[]}
+2020-08-02T07:34:48.901+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:34:48.901+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:58318: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:34:51.608+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58355
+2020-08-02T07:37:13.512+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:58355: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:37:13.512+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000292018 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc000091240}) map[]}
+2020-08-02T07:37:13.512+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:37:13.512+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:58355: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:40:15.560+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:40:15.561+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58851
+2020-08-02T07:40:17.783+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58852
+2020-08-02T07:40:18.287+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58850
+2020-08-02T07:40:52.876+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58910
+2020-08-02T07:40:55.838+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:58910: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:40:55.839+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00030c050 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc0000052a0}) map[]}
+2020-08-02T07:40:55.839+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:40:55.839+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:58910: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:40:57.625+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58922
+2020-08-02T07:42:06.642+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:58922: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T07:42:06.642+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00038a010 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc0000052a0}) map[]}
+2020-08-02T07:42:06.642+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T07:42:06.642+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:58922: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T07:42:47.490+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59091
+2020-08-02T07:45:47.372+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T07:45:49.228+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59353
+2020-08-02T07:45:49.228+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59352
+2020-08-02T07:45:49.228+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59354
+2020-08-02T07:46:13.583+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:59384
+2020-08-02T08:15:52.712+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T08:15:52.713+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:61960
+2020-08-02T08:15:52.713+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:61957
+2020-08-02T08:15:52.713+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:61958
+2020-08-02T08:15:52.713+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:61961
+2020-08-02T08:20:00.606+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T08:20:00.606+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62345
+2020-08-02T08:20:00.607+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62343
+2020-08-02T08:20:00.607+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62344
+2020-08-02T08:20:20.953+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62384
+2020-08-02T08:24:19.294+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T08:24:19.295+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62745
+2020-08-02T08:24:19.295+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62744
+2020-08-02T08:24:19.296+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:62747
+2020-08-02T10:30:10.942+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:30:10.943+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:50832
+2020-08-02T10:30:10.943+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:50834
+2020-08-02T10:30:10.943+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:50833
+2020-08-02T10:30:17.311+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:50844
+2020-08-02T10:32:58.025+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:32:58.026+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51097
+2020-08-02T10:32:58.026+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51096
+2020-08-02T10:32:58.026+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51095
+2020-08-02T10:33:06.791+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51108
+2020-08-02T10:34:25.901+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:34:25.902+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51248
+2020-08-02T10:34:25.902+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51252
+2020-08-02T10:34:25.902+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51250
+2020-08-02T10:34:27.848+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51266
+2020-08-02T10:35:03.169+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:35:03.170+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51339
+2020-08-02T10:35:03.170+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51338
+2020-08-02T10:35:03.170+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51340
+2020-08-02T10:35:14.225+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51359
+2020-08-02T10:37:13.953+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:37:13.954+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51596
+2020-08-02T10:37:13.954+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51597
+2020-08-02T10:37:13.954+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51598
+2020-08-02T10:37:29.672+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51626
+2020-08-02T10:38:34.081+0800	ERROR	login/loginservice_handle.go:71	AddEngineComponent recv error request : &{0xc00030a000 0xc00030a020 0xc0000cc0d0 map[]} &{account:"name"  password:"psd" 0 false 5 0 0 1 false}
+mmo/game/login.(*ULoginService).AddEngineComponent
+	E:/ouczbs/mmo/game/login/loginservice_handle.go:71
+github.com/ouczbs/Zmin/engine/znet.(*UClientProxy).Then
+	E:/ouczbs/Zmin/engine/znet/clientproxy.go:64
+mmo/engine/proto.PbMessageHandle
+	E:/ouczbs/mmo/engine/proto/pbdown.go:26
+mmo/game/login.ULoginService.MessageLoop
+	E:/ouczbs/mmo/game/login/loginservice_handle.go:26
+2020-08-02T10:41:24.618+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:41:24.618+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51963
+2020-08-02T10:41:24.618+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51967
+2020-08-02T10:41:24.619+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51964
+2020-08-02T10:41:24.619+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:51965
+2020-08-02T10:42:03.221+0800	ERROR	login/loginservice_handle.go:71	AddEngineComponent recv error request : &{0xc000300000 0xc000300020 0xc0000060e8 map[]} &{account:"name"  password:"psd" 0 false 7 0 0 1 false}
+mmo/game/login.(*ULoginService).AddEngineComponent
+	E:/ouczbs/mmo/game/login/loginservice_handle.go:71
+github.com/ouczbs/Zmin/engine/znet.(*UClientProxy).Then
+	E:/ouczbs/Zmin/engine/znet/clientproxy.go:64
+mmo/engine/proto.PbMessageHandle
+	E:/ouczbs/mmo/engine/proto/pbdown.go:26
+mmo/game/login.ULoginService.MessageLoop
+	E:/ouczbs/mmo/game/login/loginservice_handle.go:26
+2020-08-02T10:44:13.337+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T10:44:17.103+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52242
+2020-08-02T10:44:17.103+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52244
+2020-08-02T10:44:17.103+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52243
+2020-08-02T10:44:17.104+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:52245
+2020-08-02T10:44:42.746+0800	DEBUG	login/loginservice_game.go:34	Account not exits
+2020-08-02T10:45:00.988+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:18:18.571+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:19:01.354+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:43:01.682+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:52245: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T11:43:01.683+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00038c000 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc0000052a0}) map[]}
+2020-08-02T11:43:01.683+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T11:43:01.683+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:52245: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T11:44:48.059+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T11:44:48.060+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56340
+2020-08-02T11:44:48.060+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56339
+2020-08-02T11:44:48.060+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56338
+2020-08-02T11:44:55.136+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:56351
+2020-08-02T11:45:11.171+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:45:57.399+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:47:53.108+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:48:26.694+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:49:23.823+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:56:33.280+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:58:27.015+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T11:58:45.715+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T12:01:19.770+0800	DEBUG	login/loginservice_game.go:45	&{name psd }
+2020-08-02T12:06:42.828+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-02T12:06:42.829+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57618
+2020-08-02T12:06:42.829+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57619
+2020-08-02T12:06:42.829+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57621
+2020-08-02T12:06:42.829+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:57622
+2020-08-02T12:06:47.367+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:57624->127.0.0.1:12002: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.367+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00030e000 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[2:1]}) %!s(*base.UService=&{0xc00010d220 map[2:0xc2dfd0 10:0xc2e030 30:0x95d300 1001:0xc2df70] 0xc000104960 0xc00010d260}) map[]}
+2020-08-02T12:06:47.367+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=1)
+2020-08-02T12:06:47.367+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:57624->127.0.0.1:12002: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:47.371+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:57619: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.371+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00009c008 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc00010d240}) map[]}
+2020-08-02T12:06:47.371+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T12:06:47.371+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:57619: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:47.374+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:57623->127.0.0.1:12003: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.374+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000006040 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[2:1]}) %!s(*base.UService=&{0xc00010d220 map[2:0xc2dfd0 10:0xc2e030 30:0x95d300 1001:0xc2df70] 0xc000104960 0xc00010d260}) map[]}
+2020-08-02T12:06:47.374+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=1)
+2020-08-02T12:06:47.374+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:57623->127.0.0.1:12003: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:47.379+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:57620->127.0.0.1:12001: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.379+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000006038 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[2:1]}) %!s(*base.UService=&{0xc00010d220 map[2:0xc2dfd0 10:0xc2e030 30:0x95d300 1001:0xc2df70] 0xc000104960 0xc00010d260}) map[]}
+2020-08-02T12:06:47.379+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=1)
+2020-08-02T12:06:47.379+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:57620->127.0.0.1:12001: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:47.383+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:57618: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.383+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00009c000 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc00010d240}) map[]}
+2020-08-02T12:06:47.383+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T12:06:47.383+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:57618: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:47.387+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:14001->127.0.0.1:57621: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:47.387+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc000006050 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[]}) %!s(*login.ULoginService=&{0xc00010d240}) map[]}
+2020-08-02T12:06:47.387+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T12:06:47.387+0800	DEBUG	znet/clientproxy.go:43	Serve RecvPacket error %!(EXTRA *net.OpError=read tcp 127.0.0.1:14001->127.0.0.1:57621: wsarecv: An existing connection was forcibly closed by the remote host.)
+2020-08-02T12:06:48.831+0800	DEBUG	znet/packetconnection.go:29	Conn read error: read tcp 127.0.0.1:57617->127.0.0.1:9999: wsarecv: An existing connection was forcibly closed by the remote host.
+2020-08-02T12:06:48.831+0800	DEBUG	base/service.go:32	ClientDisconnect &{%!s(*znet.UPacketConnection=&{0xc00014a0e8 true}) %!s(*zclass.UProperty=&{{{0 0} 0 0 0 0} map[1:1 2:0]}) %!s(*base.UService=&{0xc00010d220 map[2:0xc2dfd0 10:0xc2e030 30:0x95d300 1001:0xc2df70] 0xc000104960 0xc00010d260}) map[]}
+2020-08-02T12:06:48.831+0800	INFO	base/service.go:34	 ClientDisconnect   %!(EXTRA int32=0)
+2020-08-02T12:06:48.831+0800	INFO	base/service.go:36	 Center client notify exit process !!!
+2020-08-24T09:36:10.016+0800	INFO	znet/servertcp.go:38	Listening on TCP: 127.0.0.1:14001 ...
+2020-08-24T09:36:10.024+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58417
+2020-08-24T09:36:10.024+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58419
+2020-08-24T09:36:10.024+0800	INFO	znet/servertcp.go:55	Connection from: 127.0.0.1:58418

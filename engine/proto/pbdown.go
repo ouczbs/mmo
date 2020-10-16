@@ -41,7 +41,7 @@ func newPbMessage(cmd TCmd) (IReflectMessage , error){
 		return messageType.New().Interface() ,nil
 	}
 	pbName := CommandListName[int32(cmd)]
-	pbName = strings.Replace(pbName, "CMD_" , "pb." , 1)
+	pbName = strings.Replace(pbName, "x" , "pb." , 1)
 	messageType,err := protoregistry.GlobalTypes.FindMessageByName(protoreflect.FullName(pbName))
 	if err != nil {
 		return nil , err

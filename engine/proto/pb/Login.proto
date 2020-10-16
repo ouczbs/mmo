@@ -2,17 +2,13 @@ syntax = "proto3";
 package pb;
 option go_package = ".;pb";
 
-message LOGIN_ACCOUNT{
+message LoginAccountCmd{
     string account = 1;
     string password = 2;
 }
 
-message LOGIN_ACCOUNT_ACK{
+message LoginAccountAckCmd{
     string result = 1;
     bool success =2;
     repeated int32 role_id_list = 3;
-}
-enum Test{
-    k1 = 0;
-    k2 = 1;
 }

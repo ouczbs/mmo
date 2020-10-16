@@ -25,53 +25,7 @@ const (
 // of the legacy proto package is being used.
 const _ = proto.ProtoPackageIsVersion4
 
-type Test int32
-
-const (
-	Test_k1 Test = 0
-	Test_k2 Test = 1
-)
-
-// Enum value maps for Test.
-var (
-	Test_name = map[int32]string{
-		0: "k1",
-		1: "k2",
-	}
-	Test_value = map[string]int32{
-		"k1": 0,
-		"k2": 1,
-	}
-)
-
-func (x Test) Enum() *Test {
-	p := new(Test)
-	*p = x
-	return p
-}
-
-func (x Test) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
-
-func (Test) Descriptor() protoreflect.EnumDescriptor {
-	return file_Login_proto_enumTypes[0].Descriptor()
-}
-
-func (Test) Type() protoreflect.EnumType {
-	return &file_Login_proto_enumTypes[0]
-}
-
-func (x Test) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
-}
-
-// Deprecated: Use Test.Descriptor instead.
-func (Test) EnumDescriptor() ([]byte, []int) {
-	return file_Login_proto_rawDescGZIP(), []int{0}
-}
-
-type LOGIN_ACCOUNT struct {
+type LoginAccountCmd struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -80,8 +34,8 @@ type LOGIN_ACCOUNT struct {
 	Password string `protobuf:"bytes,2,opt,name=password,proto3" json:"password,omitempty"`
 }
 
-func (x *LOGIN_ACCOUNT) Reset() {
-	*x = LOGIN_ACCOUNT{}
+func (x *LoginAccountCmd) Reset() {
+	*x = LoginAccountCmd{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_Login_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -89,13 +43,13 @@ func (x *LOGIN_ACCOUNT) Reset() {
 	}
 }
 
-func (x *LOGIN_ACCOUNT) String() string {
+func (x *LoginAccountCmd) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*LOGIN_ACCOUNT) ProtoMessage() {}
+func (*LoginAccountCmd) ProtoMessage() {}
 
-func (x *LOGIN_ACCOUNT) ProtoReflect() protoreflect.Message {
+func (x *LoginAccountCmd) ProtoReflect() protoreflect.Message {
 	mi := &file_Login_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -107,26 +61,26 @@ func (x *LOGIN_ACCOUNT) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use LOGIN_ACCOUNT.ProtoReflect.Descriptor instead.
-func (*LOGIN_ACCOUNT) Descriptor() ([]byte, []int) {
+// Deprecated: Use LoginAccountCmd.ProtoReflect.Descriptor instead.
+func (*LoginAccountCmd) Descriptor() ([]byte, []int) {
 	return file_Login_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *LOGIN_ACCOUNT) GetAccount() string {
+func (x *LoginAccountCmd) GetAccount() string {
 	if x != nil {
 		return x.Account
 	}
 	return ""
 }
 
-func (x *LOGIN_ACCOUNT) GetPassword() string {
+func (x *LoginAccountCmd) GetPassword() string {
 	if x != nil {
 		return x.Password
 	}
 	return ""
 }
 
-type LOGIN_ACCOUNT_ACK struct {
+type LoginAccountAckCmd struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
@@ -136,8 +90,8 @@ type LOGIN_ACCOUNT_ACK struct {
 	RoleIdList []int32 `protobuf:"varint,3,rep,packed,name=role_id_list,json=roleIdList,proto3" json:"role_id_list,omitempty"`
 }
 
-func (x *LOGIN_ACCOUNT_ACK) Reset() {
-	*x = LOGIN_ACCOUNT_ACK{}
+func (x *LoginAccountAckCmd) Reset() {
+	*x = LoginAccountAckCmd{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_Login_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -145,13 +99,13 @@ func (x *LOGIN_ACCOUNT_ACK) Reset() {
 	}
 }
 
-func (x *LOGIN_ACCOUNT_ACK) String() string {
+func (x *LoginAccountAckCmd) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*LOGIN_ACCOUNT_ACK) ProtoMessage() {}
+func (*LoginAccountAckCmd) ProtoMessage() {}
 
-func (x *LOGIN_ACCOUNT_ACK) ProtoReflect() protoreflect.Message {
+func (x *LoginAccountAckCmd) ProtoReflect() protoreflect.Message {
 	mi := &file_Login_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -163,26 +117,26 @@ func (x *LOGIN_ACCOUNT_ACK) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use LOGIN_ACCOUNT_ACK.ProtoReflect.Descriptor instead.
-func (*LOGIN_ACCOUNT_ACK) Descriptor() ([]byte, []int) {
+// Deprecated: Use LoginAccountAckCmd.ProtoReflect.Descriptor instead.
+func (*LoginAccountAckCmd) Descriptor() ([]byte, []int) {
 	return file_Login_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *LOGIN_ACCOUNT_ACK) GetResult() string {
+func (x *LoginAccountAckCmd) GetResult() string {
 	if x != nil {
 		return x.Result
 	}
 	return ""
 }
 
-func (x *LOGIN_ACCOUNT_ACK) GetSuccess() bool {
+func (x *LoginAccountAckCmd) GetSuccess() bool {
 	if x != nil {
 		return x.Success
 	}
 	return false
 }
 
-func (x *LOGIN_ACCOUNT_ACK) GetRoleIdList() []int32 {
+func (x *LoginAccountAckCmd) GetRoleIdList() []int32 {
 	if x != nil {
 		return x.RoleIdList
 	}
@@ -193,20 +147,19 @@ var File_Login_proto protoreflect.FileDescriptor
 
 var file_Login_proto_rawDesc = []byte{
 	0x0a, 0x0b, 0x4c, 0x6f, 0x67, 0x69, 0x6e, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x02, 0x70,
-	0x62, 0x22, 0x45, 0x0a, 0x0d, 0x4c, 0x4f, 0x47, 0x49, 0x4e, 0x5f, 0x41, 0x43, 0x43, 0x4f, 0x55,
-	0x4e, 0x54, 0x12, 0x18, 0x0a, 0x07, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x18, 0x01, 0x20,
-	0x01, 0x28, 0x09, 0x52, 0x07, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x1a, 0x0a, 0x08,
-	0x70, 0x61, 0x73, 0x73, 0x77, 0x6f, 0x72, 0x64, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08,
-	0x70, 0x61, 0x73, 0x73, 0x77, 0x6f, 0x72, 0x64, 0x22, 0x67, 0x0a, 0x11, 0x4c, 0x4f, 0x47, 0x49,
-	0x4e, 0x5f, 0x41, 0x43, 0x43, 0x4f, 0x55, 0x4e, 0x54, 0x5f, 0x41, 0x43, 0x4b, 0x12, 0x16, 0x0a,
-	0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x06, 0x72,
-	0x65, 0x73, 0x75, 0x6c, 0x74, 0x12, 0x18, 0x0a, 0x07, 0x73, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73,
-	0x18, 0x02, 0x20, 0x01, 0x28, 0x08, 0x52, 0x07, 0x73, 0x75, 0x63, 0x63, 0x65, 0x73, 0x73, 0x12,
-	0x20, 0x0a, 0x0c, 0x72, 0x6f, 0x6c, 0x65, 0x5f, 0x69, 0x64, 0x5f, 0x6c, 0x69, 0x73, 0x74, 0x18,
-	0x03, 0x20, 0x03, 0x28, 0x05, 0x52, 0x0a, 0x72, 0x6f, 0x6c, 0x65, 0x49, 0x64, 0x4c, 0x69, 0x73,
-	0x74, 0x2a, 0x16, 0x0a, 0x04, 0x54, 0x65, 0x73, 0x74, 0x12, 0x06, 0x0a, 0x02, 0x6b, 0x31, 0x10,
-	0x00, 0x12, 0x06, 0x0a, 0x02, 0x6b, 0x32, 0x10, 0x01, 0x42, 0x06, 0x5a, 0x04, 0x2e, 0x3b, 0x70,
-	0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x62, 0x22, 0x47, 0x0a, 0x0f, 0x4c, 0x6f, 0x67, 0x69, 0x6e, 0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e,
+	0x74, 0x43, 0x6d, 0x64, 0x12, 0x18, 0x0a, 0x07, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x18,
+	0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x07, 0x61, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x12, 0x1a,
+	0x0a, 0x08, 0x70, 0x61, 0x73, 0x73, 0x77, 0x6f, 0x72, 0x64, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x08, 0x70, 0x61, 0x73, 0x73, 0x77, 0x6f, 0x72, 0x64, 0x22, 0x68, 0x0a, 0x12, 0x4c, 0x6f,
+	0x67, 0x69, 0x6e, 0x41, 0x63, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x41, 0x63, 0x6b, 0x43, 0x6d, 0x64,
+	0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x12, 0x18, 0x0a, 0x07, 0x73, 0x75, 0x63, 0x63,
+	0x65, 0x73, 0x73, 0x18, 0x02, 0x20, 0x01, 0x28, 0x08, 0x52, 0x07, 0x73, 0x75, 0x63, 0x63, 0x65,
+	0x73, 0x73, 0x12, 0x20, 0x0a, 0x0c, 0x72, 0x6f, 0x6c, 0x65, 0x5f, 0x69, 0x64, 0x5f, 0x6c, 0x69,
+	0x73, 0x74, 0x18, 0x03, 0x20, 0x03, 0x28, 0x05, 0x52, 0x0a, 0x72, 0x6f, 0x6c, 0x65, 0x49, 0x64,
+	0x4c, 0x69, 0x73, 0x74, 0x42, 0x06, 0x5a, 0x04, 0x2e, 0x3b, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72,
+	0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -221,12 +174,10 @@ func file_Login_proto_rawDescGZIP() []byte {
 	return file_Login_proto_rawDescData
 }
 
-var file_Login_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_Login_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_Login_proto_goTypes = []interface{}{
-	(Test)(0),                 // 0: pb.Test
-	(*LOGIN_ACCOUNT)(nil),     // 1: pb.LOGIN_ACCOUNT
-	(*LOGIN_ACCOUNT_ACK)(nil), // 2: pb.LOGIN_ACCOUNT_ACK
+	(*LoginAccountCmd)(nil),    // 0: pb.LoginAccountCmd
+	(*LoginAccountAckCmd)(nil), // 1: pb.LoginAccountAckCmd
 }
 var file_Login_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
@@ -243,7 +194,7 @@ func file_Login_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_Login_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LOGIN_ACCOUNT); i {
+			switch v := v.(*LoginAccountCmd); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -255,7 +206,7 @@ func file_Login_proto_init() {
 			}
 		}
 		file_Login_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*LOGIN_ACCOUNT_ACK); i {
+			switch v := v.(*LoginAccountAckCmd); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -272,14 +223,13 @@ func file_Login_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_Login_proto_rawDesc,
-			NumEnums:      1,
+			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
 		GoTypes:           file_Login_proto_goTypes,
 		DependencyIndexes: file_Login_proto_depIdxs,
-		EnumInfos:         file_Login_proto_enumTypes,
 		MessageInfos:      file_Login_proto_msgTypes,
 	}.Build()
 	File_Login_proto = out.File

@@ -6,6 +6,6 @@ enum CMD
 {
     CMD_INVALID = 0;
 
-    CMD_LOGIN_ACCOUNT = 1001;
-    CMD_LOGIN_ACCOUNT_ACK = 1002;
+    xLoginAccountCmd = 1001;
+    xLoginAccountAckCmd = 1002;
 }

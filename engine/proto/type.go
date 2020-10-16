@@ -3,10 +3,10 @@ package proto
 import (
 	"github.com/ouczbs/Zmin/engine/zconf"
 	"github.com/ouczbs/Zmin/engine/znet"
-	"github.com/ouczbs/Zmin/engine/zproto/pb"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"mmo/engine/conf"
+	"mmo/engine/proto/pb"
 )
 
 type (
